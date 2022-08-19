@@ -59,7 +59,7 @@ const Keyboard = () => {
                     )}
                 </div>
                 <div className="keyboard-row">
-                    {keys.slice(55,67).map((keyItem, index) => (
+                    {keys.slice(55,66).map((keyItem, index) => (
                         <Key key={`${keyItem.keyCode}-${index}`} keyItem={keyItem} />
                     )
                     )}

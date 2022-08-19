@@ -12,13 +12,32 @@ const Key = ({ keyItem }) => {
     const onClick = (keyCode) => {
         const textarea = document.querySelector('textarea');
 
-        textarea.focus();
         textarea.value += keyCode;
+    }
+
+    const deleteOne = () => {
+        const textarea = document.querySelector('textarea');
+
+        textarea.value = textarea.value.slice(0, -1);
+    }
+
+    const deleteAll = () => {
+        const textarea = document.querySelector('textarea');
+
+        textarea.value = '';
     }
 
     return (
         <div
-            onClick={() => onClick(keyItem.keyCode) }
+            onClick={() => {
+                if(keyItem.keyCode === 'Delete' || keyItem.keyCode === 'Backspace') {
+                    deleteOne();
+                } else if(keyItem.keyCode === 'Escape' || keyItem.keyCode === 'Enter') { 
+                    deleteAll();
+                } else {
+                    onClick(keyItem.keyCode)
+                }
+            } }
             className={`key-code${
                 keySet1.includes(keyItem.keyCode) ? 
                 ' key-set-1' 

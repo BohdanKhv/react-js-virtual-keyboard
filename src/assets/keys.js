@@ -232,7 +232,7 @@ const keys = [
     },
     {
         keyCode: 'Shift',
-        keyName: '⇧'
+        keyName: 'Shift'
     },
     {
         keyCode: 'z',
@@ -274,10 +274,10 @@ const keys = [
         keyCode: '/',
         keyName: '/'
     },
-    {
-        keyCode: 'ArrowUp',
-        keyName: '↑',
-    },
+    // {
+    //     keyCode: 'ArrowUp',
+    //     keyName: '↑',
+    // },
     {
         keyCode: 'Control',
         keyName: 'Ctrl'
@@ -298,18 +298,18 @@ const keys = [
         keyCode: 'ContextMenu',
         keyName: '⊞'
     },
-    {
-        keyCode: 'ArrowLeft',
-        keyName: '←',
-    },
-    {
-        keyCode: 'ArrowDown',
-        keyName: '↓',
-    },
-    {
-        keyCode: 'ArrowRight',
-        keyName: '→',
-    },
+    // {
+    //     keyCode: 'ArrowLeft',
+    //     keyName: '←',
+    // },
+    // {
+    //     keyCode: 'ArrowDown',
+    //     keyName: '↓',
+    // },
+    // {
+    //     keyCode: 'ArrowRight',
+    //     keyName: '→',
+    // },
     ];
 
 export default keys;

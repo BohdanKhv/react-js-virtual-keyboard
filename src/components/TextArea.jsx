@@ -2,7 +2,7 @@
 
 const TextArea = () => {
     return (
-        <textarea className="keyboard-text-area" placeholder="Type here..."></textarea>
+        <textarea readOnly className="keyboard-text-area" placeholder="Type here..."></textarea>
     )
 }
 
