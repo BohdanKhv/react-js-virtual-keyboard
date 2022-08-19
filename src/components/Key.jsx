@@ -8,8 +8,17 @@ const keySet5 = ['Alt', 'Control', 'Meta', 'ContextMenu'];
 const keySet6 = [' '];
 
 const Key = ({ keyItem }) => {
+
+    const onClick = (keyCode) => {
+        const textarea = document.querySelector('textarea');
+
+        textarea.focus();
+        textarea.value += keyCode;
+    }
+
     return (
         <div
+            onClick={() => onClick(keyItem.keyCode) }
             className={`key-code${
                 keySet1.includes(keyItem.keyCode) ? 
                 ' key-set-1' 
